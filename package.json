@@ -1,0 +1,19 @@
+{
+  "name": "fake-store-vanilla",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicholas-newman1/fake-store-vanilla.git"
+  },
+  "author": "Nicholas Newman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nicholas-newman1/fake-store-vanilla/issues"
+  },
+  "homepage": "https://github.com/nicholas-newman1/fake-store-vanilla#readme"
+}
