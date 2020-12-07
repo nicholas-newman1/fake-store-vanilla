@@ -15,7 +15,9 @@ const HomeScreen = {
             </div>
             <div class="product__text">
               <h2 class="product__title">
-                ${product.title}
+                <a class="product__link" href="/#/product/${product.id}">
+                  ${product.title}
+                </a>                
               </h2>
               <h3 class="product__price">$${product.price}</h3>
             </div>

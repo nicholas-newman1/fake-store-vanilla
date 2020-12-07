@@ -61,6 +61,11 @@ footer {
   font-weight: 400;
 }
 
+.product__link {
+  text-decoration: none;
+  color: black;
+}
+
 .product__price {
   margin-bottom: 1rem;
   font-size: 1rem;
