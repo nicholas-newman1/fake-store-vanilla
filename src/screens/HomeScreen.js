@@ -1,7 +1,8 @@
-import { products } from '../data.js';
-
 const HomeScreen = {
-  render: () => {
+  render: async () => {
+    const res = await fetch('https://fakestoreapi.com/products');
+    const products = await res.json();
+
     return `
       <ul class='products container'>
         ${products
