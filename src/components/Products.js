@@ -1,4 +1,4 @@
-const HomeScreen = {
+const Products = {
   render: async () => {
     const res = await fetch('https://fakestoreapi.com/products');
     const products = await res.json();
@@ -34,4 +34,4 @@ const HomeScreen = {
   },
 };
 
-export default HomeScreen;
+export default Products;

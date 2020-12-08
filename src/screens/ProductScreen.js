@@ -1,6 +1,9 @@
+import Product from '../components/Product.js';
+import Products from '../components/Products.js';
+
 const ProductScreen = {
-  render: () => {
-    return `<h1>Product Screen</h1>`;
+  render: async () => {
+    return (await Product.render()) + (await Products.render());
   },
 };
 

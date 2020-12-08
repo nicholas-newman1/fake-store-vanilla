@@ -1,0 +1,57 @@
+@use '../config' as *;
+
+.header {
+  background: $color1;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.header__logo {
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 300ms;
+}
+
+.header__logo:hover {
+  color: #ddd;
+}
+
+.header__nav,
+.header__list,
+.header__item,
+.header__link {
+  height: 100%;
+}
+
+.header__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.header__item+.header__item {
+  margin-left: 0.5rem
+}
+
+.header__link {
+  display: grid;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: 0 0.5rem;
+  transition: 300ms;
+}
+
+.header__link:hover {
+  background: rgba(0, 0, 0, 0.3);
+  color: #ddd;
+}

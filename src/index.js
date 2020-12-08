@@ -1,6 +1,7 @@
 import HomeScreen from './screens/HomeScreen.js';
 import ProductScreen from './screens/ProductScreen.js';
 import Error404Screen from './screens/Error404Screen.js';
+import Header from './components/Header.js';
 import { parseRequestUrl } from './utils.js';
 
 const routes = {
@@ -18,6 +19,9 @@ const router = async () => {
 
   const main = document.getElementById('root');
   main.innerHTML = await screen.render();
+
+  const header = document.getElementById('header');
+  header.innerHTML = Header.render();
 };
 
 window.addEventListener('load', router);
