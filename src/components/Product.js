@@ -1,10 +1,17 @@
+import { getProduct } from '../api.js';
 import { parseRequestUrl } from '../utils.js';
 
 const Product = {
+  category: '',
   render: async () => {
     const request = parseRequestUrl();
-    const res = await fetch(`https://fakestoreapi.com/products/${request.id}`);
-    const product = await res.json();
+    const product = await getProduct(request.id);
+
+    if (product.error) {
+      return `<div>${product.error}</div>`;
+    }
+
+    Product.category = product.category;
 
     return `<div class="product container">
               <img class="product__img" src='${product.image}' alt=${
@@ -14,7 +21,9 @@ const Product = {
                 <h1 class="product__title">${product.title}</h1>
                 <h2 class="product__price">$${product.price.toFixed(2)}</h2>
                 <p class="product__description">${product.description}</p>
-                <button class="product__btn">
+                <button id="add-to-cart" class="product__btn" data-id=${
+                  product.id
+                }>
                   Add To Cart
                 </button>
                 </div>

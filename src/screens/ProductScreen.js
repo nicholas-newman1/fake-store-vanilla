@@ -3,7 +3,7 @@ import Products from '../components/Products.js';
 
 const ProductScreen = {
   render: async () => {
-    return (await Product.render()) + (await Products.render());
+    return (await Product.render()) + (await Products.render(Product.category));
   },
 };
 

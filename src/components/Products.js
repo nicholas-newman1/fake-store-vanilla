@@ -1,6 +1,8 @@
 const Products = {
-  render: async () => {
-    const res = await fetch('https://fakestoreapi.com/products');
+  render: async (category) => {
+    let url = 'https://fakestoreapi.com/products';
+    if (category) url += `/category/${category}`;
+    const res = await fetch(url);
     const products = await res.json();
 
     return `
