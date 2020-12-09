@@ -1,6 +1,7 @@
 import { getProduct } from '../api.js';
 import { getCartItems, setCartItems } from '../localStorage.js';
 import { parseRequestUrl } from '../utils.js';
+import CartItem from '../components/CartItem.js';
 
 const addToCart = (item, forceUpdate = false) => {
   let cartItems = getCartItems();
@@ -29,11 +30,12 @@ const CartScreen = {
         qty: 1,
       });
     }
-    return `<div>${getCartItems().map(
-      (item) => `
-      <div>${item.title}</div>
-    `
-    )}</div>`;
+    return `
+      <ul>
+        ${getCartItems()
+          .map((item) => CartItem.render(item))
+          .join('')}
+      </ul>`;
   },
 };
 

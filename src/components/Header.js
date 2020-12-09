@@ -8,7 +8,7 @@ const Header = {
                     <a href="/#" class="header__link">Home</a>
                   </li>
                   <li class="header__item">
-                    <a href="" class="header__link">Cart</a>
+                    <a href="/#/cart" class="header__link">Cart</a>
                   </li>
                 </ul>
               </nav>

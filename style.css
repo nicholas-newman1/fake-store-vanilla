@@ -258,3 +258,44 @@ footer {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+.cart-item {
+  display: flex;
+  background: white;
+  border-radius: 5px;
+  padding: 1rem;
+}
+.cart-item__img-container {
+  flex-shrink: 0;
+  width: 8rem;
+  height: 8rem;
+}
+.cart-item__img {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100%;
+}
+.cart-item__content {
+  width: 100%;
+}
+.cart-item__title-price-container {
+  display: flex;
+  justify-content: space-between;
+}
+.cart-item__title {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.cart-item__link {
+  text-decoration: none;
+  color: black;
+  transition: 300ms;
+}
+.cart-item__link:hover {
+  color: #333;
+}
+.cart-item__price {
+  margin-left: 2rem;
+}
+.cart-item__label {
+  font-size: 0.8rem;
+}
