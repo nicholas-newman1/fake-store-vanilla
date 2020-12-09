@@ -1,4 +1,13 @@
 const Products = {
+  after_render: () => {
+    const addToCartBtns = [...document.getElementsByClassName('products__btn')];
+    addToCartBtns.forEach((btn) =>
+      btn.addEventListener('click', (e) => {
+        const id = e.target.dataset.id;
+        window.location.hash = `/cart/${id}`;
+      })
+    );
+  },
   render: async (category) => {
     let url = 'https://fakestoreapi.com/products';
     if (category) url += `/category/${category}`;
@@ -22,7 +31,9 @@ const Products = {
               </h2>
               <h3 class="products__price">$${product.price.toFixed(2)}</h3>
             </div>
-            <button class="btn products__btn">Add To Cart</button>
+            <button class="btn products__btn" data-id=${
+              product.id
+            }>Add To Cart</button>
           </li>
         `
           )

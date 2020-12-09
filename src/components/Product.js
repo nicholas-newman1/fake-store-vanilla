@@ -3,6 +3,12 @@ import { parseRequestUrl } from '../utils.js';
 
 const Product = {
   category: '',
+  after_render: () => {
+    document.getElementById('add-to-cart').addEventListener('click', (e) => {
+      const id = e.target.dataset.id;
+      document.location.hash = `/cart/${id}`;
+    });
+  },
   render: async () => {
     const request = parseRequestUrl();
     const product = await getProduct(request.id);
