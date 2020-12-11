@@ -23,7 +23,7 @@ const CartItem = {
           <div class="cart-item__options">
             <label class="cart-item__label">
               Qty:
-              <select>
+              <select class='cart-item__qty-select' data-id=${item.id}>
                 ${[1, 2, 3, 4, 5]
                   .map((value) => {
                     return `

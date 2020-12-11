@@ -1,8 +1,11 @@
-.cart-screen__checkout, .cart-screen__items {
+.cart-screen__checkout, 
+.cart-screen__items,
+.cart-screen__empty-msg {
   margin-top: 1rem;
 }
 
-.cart-screen__items {
+.cart-screen__items,
+.cart-screen__empty-msg {
   width: 100%;
 }
 
