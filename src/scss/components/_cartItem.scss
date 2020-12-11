@@ -48,3 +48,7 @@
     font-size: 0.8rem;
   }
 }
+
+.cart-item + .cart-item {
+  margin-top: 1rem;
+}

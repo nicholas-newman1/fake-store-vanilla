@@ -13,7 +13,7 @@ const CartItem = {
         <div class="cart-item__content">
           <div class="cart-item__title-price-container">
             <h2 class="cart-item__title">
-              <a class="cart-item__link" href="/products/${item.id}">
+              <a class="cart-item__link" href="/#/product/${item.id}">
                 ${item.title}
               </a>
             </h2>

@@ -19,7 +19,7 @@ const Product = {
 
     Product.category = product.category;
 
-    return `<div class="product container">
+    return `<div class="product">
               <img class="product__img" src='${product.image}' alt=${
       product.title
     }/>

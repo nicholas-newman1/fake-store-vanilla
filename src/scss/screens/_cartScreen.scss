@@ -1,0 +1,17 @@
+.cart-screen__checkout, .cart-screen__items {
+  margin-top: 1rem;
+}
+
+.cart-screen__items {
+  width: 100%;
+}
+
+@media(min-width: 700px) {
+  .cart-screen {
+    display: flex;
+  
+    &__items {
+      margin-right: 1rem;
+    }
+  }
+}

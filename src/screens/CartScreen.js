@@ -2,6 +2,7 @@ import { getProduct } from '../api.js';
 import { getCartItems, setCartItems } from '../localStorage.js';
 import { parseRequestUrl } from '../utils.js';
 import CartItem from '../components/CartItem.js';
+import CartCheckout from '../components/CartCheckout.js';
 
 const addToCart = (item, forceUpdate = false) => {
   let cartItems = getCartItems();
@@ -31,11 +32,18 @@ const CartScreen = {
       });
     }
     return `
-      <ul>
-        ${getCartItems()
-          .map((item) => CartItem.render(item))
-          .join('')}
-      </ul>`;
+      <div class='cart-screen'>
+        <ul class='cart-screen__items'>
+          ${getCartItems()
+            .map((item) => CartItem.render(item))
+            .join('')}
+        </ul>
+        <div class='cart-screen__checkout'>
+          ${CartCheckout.render()}
+        </div>        
+      </div>
+      
+      `;
   },
 };
 
