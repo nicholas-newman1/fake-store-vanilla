@@ -1,0 +1,8 @@
+.categories {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    width: 23%;
+  }
+}

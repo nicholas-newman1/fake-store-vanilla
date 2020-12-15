@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap");
 .loading {
   position: absolute;
   top: 50%;
@@ -331,6 +331,47 @@ footer {
 }
 .cart-checkout__btn:hover {
   background: #eeab1a;
+}
+
+.category {
+  height: 10rem;
+  background: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 300ms;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+}
+.category:hover {
+  transform: scale(1.1);
+}
+.category__title {
+  color: black;
+  font-weight: 800;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+}
+.category__title::after {
+  content: "";
+  height: 3px;
+  width: 50%;
+  background: #f0b432;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+}
+.categories__item {
+  width: 23%;
 }
 
 .cart-screen__checkout,

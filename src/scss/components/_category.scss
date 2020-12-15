@@ -1,0 +1,37 @@
+@use '../config' as *;
+
+.category {
+  height: 10rem;
+  background: white;
+  border-radius: 5px;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 300ms;
+  @include box-shadow();
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &__title {
+    color:black;
+    font-weight: 800;
+    font-size: 1.25rem;
+    text-transform: uppercase;    
+    letter-spacing: 1px;
+    position: relative;
+
+    &::after {
+      content: '';
+      height: 3px;
+      width: 50%;
+      background: $accent;
+      position: absolute;
+      bottom: -2px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

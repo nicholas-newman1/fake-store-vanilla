@@ -1,3 +1,5 @@
+@use '../config' as *;
+
 .products {
   padding: 2.5rem 0;
   display: grid;
@@ -11,7 +13,7 @@
   padding: 1.5rem;
   border-radius: 5px;
   transition: 300ms;
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.05);
+  @include box-shadow();
   display: grid;
   grid-template-rows: 400px auto auto;
 }
