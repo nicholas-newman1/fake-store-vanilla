@@ -2,7 +2,7 @@
 
 .category {
   height: 10rem;
-  background: white;
+  background: $color1;
   border-radius: 5px;  
   display: flex;
   align-items: center;
@@ -16,7 +16,7 @@
   }
 
   &__title {
-    color:black;
+    color:white;
     font-weight: 800;
     font-size: 1.25rem;
     text-transform: uppercase;    

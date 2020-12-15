@@ -1,0 +1,47 @@
+@use '../config' as *;
+
+.hero {
+  background: #ddd;
+
+  &__container {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: $color1;
+    margin-bottom: 1rem;
+    position: relative;
+
+    &::after {
+      content: '';
+      height: 3px;
+      width: 50px;
+      background: $accent;
+      position: absolute;
+      bottom: -2px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__btn {
+    border: none;
+    background: $color2;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 300ms;
+
+    &:hover {
+      background: darken($color2, 5);
+    }
+  }
+}

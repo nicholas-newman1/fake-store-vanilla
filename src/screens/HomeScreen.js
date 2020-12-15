@@ -1,4 +1,5 @@
-import Category from '../components/Category.js';
+import Categories from '../components/Categories.js';
+import Hero from '../components/Hero.js';
 import Products from '../components/Products.js';
 
 const HomeScreen = {
@@ -6,24 +7,15 @@ const HomeScreen = {
     Products.after_render();
   },
   render: async () => {
-    const categories = [
-      { title: "Men's Clothing", path: 'men%20clothing' },
-      { title: "Women's Clothing", path: 'women%20clothing' },
-      { title: 'Jewelery', path: 'jewelery' },
-      { title: 'Electronics', path: 'electronics' },
-    ];
     return `
-      <section class='categories'>
-        ${categories
-          .map(
-            (category) => `
-            <div class="categories__item">
-              ${Category.render(category)}
-            </div>          
-        `
-          )
-          .join('')}        
+      ${Hero.render()}
+      ${Categories.render()}
+      <section id='products' class='products__container'>
+        <div class='container'>
+          ${await Products.render()}
+        </div>
       </section>
+      
     `;
   },
 };
