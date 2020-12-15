@@ -1,8 +1,12 @@
 .categories {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  gap: 1rem;
 
-  &__item {
-    width: 23%;
+  @media (min-width: 600px) {
+      grid-template-columns: repeat(2, 1fr);    
+  }
+
+  @media (min-width: 1200px) {
+      grid-template-columns: repeat(4, 1fr);    
   }
 }

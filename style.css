@@ -345,7 +345,7 @@ footer {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
 }
 .category:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .category__title {
   color: black;
@@ -367,11 +367,18 @@ footer {
 }
 
 .categories {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  gap: 1rem;
 }
-.categories__item {
-  width: 23%;
+@media (min-width: 600px) {
+  .categories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .categories {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .cart-screen__checkout,
