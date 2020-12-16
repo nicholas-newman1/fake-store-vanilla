@@ -46,8 +46,18 @@ footer {
   color: white;
   cursor: pointer;
   transition: 300ms;
+  border-radius: 5px;
 }
 
 .btn:hover {
   background: darken($color2, 10)
 }
+
+.btn--black {
+  background: #222;
+}
+
+.btn--black:hover {
+  background: darken(#222, 10)
+}
+

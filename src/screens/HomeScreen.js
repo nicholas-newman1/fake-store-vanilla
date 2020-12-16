@@ -1,6 +1,7 @@
 import Categories from '../components/Categories.js';
 import Hero from '../components/Hero.js';
 import Products from '../components/Products.js';
+import ProductsPreview from '../components/ProductsPreview.js';
 
 const HomeScreen = {
   after_render: () => {
@@ -10,7 +11,7 @@ const HomeScreen = {
     return `
       ${Hero.render()}
       ${Categories.render()}
-      ${await Products.render('', 6)}
+      ${await ProductsPreview.render(6)}
     `;
   },
 };

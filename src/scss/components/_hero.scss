@@ -28,18 +28,4 @@
       transform: translateX(-50%);
     }
   }
-
-  &__btn {
-    border: none;
-    background: $color2;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 300ms;
-
-    &:hover {
-      background: darken($color2, 5);
-    }
-  }
 }

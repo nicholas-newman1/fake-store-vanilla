@@ -1,7 +1,6 @@
 @use '../config' as *;
 
 .products {
-  padding: 2.5rem 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
