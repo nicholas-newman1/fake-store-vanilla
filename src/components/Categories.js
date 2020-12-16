@@ -10,16 +10,18 @@ const Categories = {
     ];
 
     return `
-    <section class='categories container'>
-      ${categories
-        .map(
-          (category) => `
-          <div class="categories__item">
-            ${Category.render(category)}
-          </div>          
-      `
-        )
-        .join('')}        
+    <section class='categories'>
+      <div class='categories__container container'>
+        ${categories
+          .map(
+            (category) => `
+            <div class="categories__item">
+              ${Category.render(category)}
+            </div>          
+        `
+          )
+          .join('')}
+      </div>
     </section>
   `;
   },

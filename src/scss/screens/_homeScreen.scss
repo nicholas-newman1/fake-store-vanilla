@@ -2,16 +2,3 @@
   background: #ddd;
 }
 
-.categories {
-  padding: 4rem 0;
-  display: grid;
-  gap: 1rem;
-
-  @media (min-width: 600px) {
-      grid-template-columns: repeat(2, 1fr);    
-  }
-
-  @media (min-width: 1200px) {
-      grid-template-columns: repeat(4, 1fr);    
-  }
-}

@@ -17,7 +17,7 @@ const Products = {
     const products = await res.json();
 
     return `
-      <ul class='products'>
+      <ul class='products container'>
         ${products
           .map((product, i) => {
             if (!limit) return ProductListing.render(product);

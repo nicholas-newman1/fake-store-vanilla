@@ -10,11 +10,7 @@ const HomeScreen = {
     return `
       ${Hero.render()}
       ${Categories.render()}
-      <section id='products' class='products__container'>
-        <div class='container'>
-          ${await Products.render('', 6)}
-        </div>
-      </section>      
+      ${await Products.render('', 6)}
     `;
   },
 };
