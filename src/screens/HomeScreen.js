@@ -12,10 +12,9 @@ const HomeScreen = {
       ${Categories.render()}
       <section id='products' class='products__container'>
         <div class='container'>
-          ${await Products.render()}
+          ${await Products.render('', 6)}
         </div>
-      </section>
-      
+      </section>      
     `;
   },
 };

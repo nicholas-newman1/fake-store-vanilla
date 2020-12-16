@@ -1,3 +1,5 @@
+import ProductListing from './ProductListing.js';
+
 const Products = {
   after_render: () => {
     const addToCartBtns = [...document.getElementsByClassName('products__btn')];
@@ -8,7 +10,7 @@ const Products = {
       })
     );
   },
-  render: async (category) => {
+  render: async (category, limit) => {
     let url = 'https://fakestoreapi.com/products';
     if (category) url += `/category/${category}`;
     const res = await fetch(url);
@@ -17,26 +19,10 @@ const Products = {
     return `
       <ul class='products'>
         ${products
-          .map(
-            (product) => `
-          <li class="products__item">
-              <img class="products__img"
-                src=${product.image}
-              />
-            <div class="products__text">
-              <h2 class="products__title">
-                <a class="products__link" href="/#/product/${product.id}">
-                  ${product.title}
-                </a>                
-              </h2>
-              <h3 class="products__price">$${product.price.toFixed(2)}</h3>
-            </div>
-            <button class="btn products__btn" data-id=${
-              product.id
-            }>Add To Cart</button>
-          </li>
-        `
-          )
+          .map((product, i) => {
+            if (!limit) return ProductListing.render(product);
+            if (i < limit) return ProductListing.render(product);
+          })
           .join('')}
       </ul>
       

@@ -1,0 +1,64 @@
+@use '../config' as *;
+
+.product-listing {
+  background:white;
+  padding: 1.5rem;
+  border-radius: 5px;
+  transition: 300ms;
+  @include box-shadow();
+  display: grid;
+  grid-template-rows: 400px auto auto;
+}
+
+.product-listing:hover {
+  transform: scale(1.025);
+}
+
+.product-listing:hover .product-listing__img:first-child {
+  transform: scale(1.05)
+}
+
+.product-listing__img {
+  height: 400px;
+  max-width: 100%;
+  object-fit: contain;
+  transition: 300ms;
+  margin-top: auto;  
+  margin: 0 auto;
+}
+
+.product-listing__text {
+  padding: 1rem 0;
+}
+
+.product-listing__title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.product-listing__link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.product-listing__link:hover {
+  color: #333;
+}
+
+.product-listing__price {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.product-listing__description {
+  font-size: 0.8rem;
+}
+
+.product-listing__btn {
+  justify-self: flex-start;
+  align-self: flex-end;
+}
