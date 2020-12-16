@@ -1,7 +1,7 @@
 import { getProduct } from '../api.js';
 import { parseRequestUrl } from '../utils.js';
 
-const Product = {
+const ProductOverview = {
   category: '',
   after_render: () => {
     document.getElementById('add-to-cart').addEventListener('click', (e) => {
@@ -17,17 +17,21 @@ const Product = {
       return `<div>${product.error}</div>`;
     }
 
-    Product.category = product.category;
+    ProductOverview.category = product.category;
 
-    return `<div class="product">
-              <img class="product__img" src='${product.image}' alt=${
+    return `<div class="product-overview">
+              <img class="product-overview__img" src='${product.image}' alt=${
       product.title
     }/>
-              <div class="product__info-container">
-                <h1 class="product__title">${product.title}</h1>
-                <h2 class="product__price">$${product.price.toFixed(2)}</h2>
-                <p class="product__description">${product.description}</p>
-                <button id="add-to-cart" class="product__btn" data-id=${
+              <div class="product-overview__info-container">
+                <h1 class="product-overview__title">${product.title}</h1>
+                <h2 class="product-overview__price">$${product.price.toFixed(
+                  2
+                )}</h2>
+                <p class="product-overview__description">${
+                  product.description
+                }</p>
+                <button id="add-to-cart" class="product-overview__btn" data-id=${
                   product.id
                 }>
                   Add To Cart
@@ -38,4 +42,4 @@ const Product = {
   },
 };
 
-export default Product;
+export default ProductOverview;
