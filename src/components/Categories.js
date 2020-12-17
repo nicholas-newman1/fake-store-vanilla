@@ -10,8 +10,7 @@ const Categories = {
     ];
 
     return `
-    <section class='categories'>
-      <div class='categories__container container'>
+      <div class='categories'>
         ${categories
           .map(
             (category) => `
@@ -22,7 +21,6 @@ const Categories = {
           )
           .join('')}
       </div>
-    </section>
   `;
   },
 };

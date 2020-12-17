@@ -1,14 +1,13 @@
 const Hero = {
   render: () => {
     return `
-      <section class="hero">
-        <div class="hero__container container">
-          <h1 class="hero__title">The Best Fake Products</h1>
-          <a href='/#/products'>
-            <button class="btn">Our Products</button>
-          </a>
-        </div>
-      </section>`;
+      <div class="hero">
+        <h1 class="hero__title">The Best Fake Products</h1>
+        <a href='/#/products'>
+          <button class="btn">Our Products</button>
+        </a>
+      </div>
+    `;
   },
 };
 

@@ -9,9 +9,23 @@ const HomeScreen = {
   },
   render: async () => {
     return `
-      ${Hero.render()}
-      ${Categories.render()}
-      ${await ProductsPreview.render(6)}
+      <div class='home-screen'>
+        <section class='home-screen__hero'>
+          ${Hero.render()}
+        </section>
+
+        <section class='home-screen__categories'>
+          <div class='container'>
+            ${Categories.render()}
+          </div>          
+        </section>
+
+        <section class='home-screen__products-preview'>
+          <div class='container'>
+            ${await ProductsPreview.render(6)}
+          </div>          
+        </section>
+      </div>
     `;
   },
 };

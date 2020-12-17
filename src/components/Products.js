@@ -10,7 +10,7 @@ const Products = {
       })
     );
   },
-  render: async (category) => {
+  render: async (category, limit) => {
     let url = 'https://fakestoreapi.com/products';
     if (category) url += `/category/${category}`;
     const res = await fetch(url);
@@ -18,7 +18,12 @@ const Products = {
 
     return `
       <ul class='products'>
-        ${products.map((product) => ProductListing.render(product)).join('')}
+        ${products
+          .map((product, i) => {
+            if (!limit) return ProductListing.render(product);
+            if (i < limit) return ProductListing.render(product);
+          })
+          .join('')}
       </ul>
       
     `;

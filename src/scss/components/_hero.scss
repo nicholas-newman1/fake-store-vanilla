@@ -1,13 +1,11 @@
 @use '../config' as *;
 
 .hero {
-  &__container {
-    height: 80vh;
+    min-height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-  }
 
   &__title {
     text-align: center;
