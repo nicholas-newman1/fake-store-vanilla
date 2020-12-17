@@ -3,7 +3,7 @@ import ProductListing from './ProductListing.js';
 const Products = {
   after_render: () => {
     const addToCartBtns = [
-      ...document.getElementsByClassName('product-listing'),
+      ...document.getElementsByClassName('product-listing__btn'),
     ];
     addToCartBtns.forEach((btn) =>
       btn.addEventListener('click', (e) => {

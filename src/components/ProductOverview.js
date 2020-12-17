@@ -19,26 +19,26 @@ const ProductOverview = {
 
     ProductOverview.category = product.category;
 
-    return `<div class="product-overview">
-              <img class="product-overview__img" src='${product.image}' alt=${
-      product.title
-    }/>
-              <div class="product-overview__info-container">
-                <h1 class="product-overview__title">${product.title}</h1>
-                <h2 class="product-overview__price">$${product.price.toFixed(
-                  2
-                )}</h2>
-                <p class="product-overview__description">${
-                  product.description
-                }</p>
-                <button id="add-to-cart" class="product-overview__btn" data-id=${
-                  product.id
-                }>
-                  Add To Cart
-                </button>
-                </div>
-              </div>
-            </div>`;
+    return `
+      <div class="product-overview">
+        <img 
+          class="product-overview__img" 
+          src='${product.image}' 
+          alt=${product.title}
+        />
+        <div class="product-overview__info-container">
+          <h1 class="product-overview__title">${product.title}</h1>
+          <h2 class="product-overview__price">$${product.price.toFixed(2)}</h2>
+          <p class="product-overview__description">${product.description}</p>
+          <button 
+            id="add-to-cart" 
+            class="btn" 
+            data-id=${product.id}
+          >
+            Add To Cart
+          </button>
+        </div>
+      </div>`;
   },
 };
 
