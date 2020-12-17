@@ -65,19 +65,22 @@ const CartScreen = {
       });
     }
     return `
-      <div class='cart-screen'>
+      <div class='cart-screen container'>
+        <section class='cart-screen__cart'>
         ${
           getCartItems().length > 0
             ? `<ul class='cart-screen__items'>
-                  ${getCartItems()
-                    .map((item) => CartItem.render(item))
-                    .join('')}
-                </ul>`
+                ${getCartItems()
+                  .map((item) => CartItem.render(item))
+                  .join('')}
+              </ul>`
             : `<h2 class='cart-screen__empty-msg'>Your Cart is Empty</h2>`
         }
-        <div class='cart-screen__checkout'>
+        </section>
+        
+        <section class='cart-screen__checkout'>
           ${CartCheckout.render()}
-        </div>        
+        </section>        
       </div>
       
       `;

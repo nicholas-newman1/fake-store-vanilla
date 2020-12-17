@@ -1,20 +1,22 @@
-.cart-screen__checkout, 
-.cart-screen__items,
-.cart-screen__empty-msg {
-  margin-top: 1rem;
-}
+.cart-screen {
+  margin: 1rem auto;
 
-.cart-screen__items,
-.cart-screen__empty-msg {
-  width: 100%;
+  &__checkout {
+    margin-top: 1rem;
+  }
+
+  &__cart {
+    width: 100%;
+  }
 }
 
 @media(min-width: 700px) {
   .cart-screen {
     display: flex;
   
-    &__items {
-      margin-right: 1rem;
+    &__checkout {
+      margin-top: 0;
+      margin-left: 1rem;
     }
   }
 }
