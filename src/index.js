@@ -5,12 +5,15 @@ import Loading from './components/Loading.js';
 import Header from './components/Header.js';
 import { parseRequestUrl } from './utils.js';
 import CartScreen from './screens/CartScreen.js';
+import ProductsScreen from './screens/ProductsScreen.js';
 
 const routes = {
   '/': HomeScreen,
   '/product/:id': ProductScreen,
   '/cart/:id': CartScreen,
   '/cart': CartScreen,
+  '/products/:id': ProductsScreen,
+  '/products': ProductsScreen,
 };
 
 const router = async () => {
