@@ -10,6 +10,10 @@ export const parseRequestUrl = () => {
 };
 
 export const rerender = async (component) => {
-  document.getElementById('root').innerHTML = await component.render();
+  document.getElementById('main').innerHTML = await component.render();
   await component.after_render();
+};
+
+export const replaceUrlSpaces = (text) => {
+  return text.split('%20').join(' ');
 };

@@ -431,6 +431,38 @@ footer {
   background: #ddd;
 }
 
+.products-screen__categories {
+  padding: 2rem 0;
+  background: #ddd;
+}
+.products-screen__categories .category {
+  height: 3rem;
+}
+.products-screen__categories .category__title::after {
+  content: none;
+}
+.products-screen__products {
+  padding: 5rem 0;
+}
+.products-screen__heading {
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
+  font-size: 3rem;
+  position: relative;
+}
+.products-screen__heading::after {
+  content: "";
+  height: 3px;
+  width: 100px;
+  background: #123C5C;
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .cart-screen__checkout,
 .cart-screen__items,
 .cart-screen__empty-msg {

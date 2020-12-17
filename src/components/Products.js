@@ -2,7 +2,9 @@ import ProductListing from './ProductListing.js';
 
 const Products = {
   after_render: () => {
-    const addToCartBtns = [...document.getElementsByClassName('products__btn')];
+    const addToCartBtns = [
+      ...document.getElementsByClassName('product-listing'),
+    ];
     addToCartBtns.forEach((btn) =>
       btn.addEventListener('click', (e) => {
         const id = e.target.dataset.id;

@@ -3,8 +3,8 @@ import Category from './Category.js';
 const Categories = {
   render: () => {
     const categories = [
-      { title: "Men's Clothing", path: 'men%20clothing' },
-      { title: "Women's Clothing", path: 'women%20clothing' },
+      { title: 'Men Clothing', path: 'men%20clothing' },
+      { title: 'Women Clothing', path: 'women%20clothing' },
       { title: 'Jewelery', path: 'jewelery' },
       { title: 'Electronics', path: 'electronics' },
     ];

@@ -1,2 +1,41 @@
 @use '../config' as *;
 
+.products-screen {
+  &__categories {
+    padding: 2rem 0;
+    background: #ddd;
+
+    .category {
+      height: 3rem;
+
+      &__title::after {
+        content: none;
+      }
+    }
+  }
+
+  &__products {
+    padding: 5rem 0;
+  }
+
+  &__heading {
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    font-size: 3rem;
+    position: relative;
+
+    &::after {
+      content: '';
+      height: 3px;
+      width: 100px;
+      background: $color1;
+      position: absolute;
+      bottom: -2px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
