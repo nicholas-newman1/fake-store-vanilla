@@ -141,12 +141,13 @@ footer {
   align-items: center;
   color: white;
   text-decoration: none;
-  padding: 0 0.5rem;
+  padding: 0.5rem;
   transition: 300ms;
 }
 .nav__link:hover {
   background: rgba(0, 0, 0, 0.3);
   color: #ddd;
+  border-radius: 5px;
 }
 
 .product-overview {
