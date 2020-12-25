@@ -71,6 +71,18 @@ footer {
   align-items: center;
   height: 100%;
 }
+@media (max-width: 450px) {
+  .header__logo {
+    text-align: center;
+    margin-right: 0.5rem;
+  }
+  .header__logo .logo {
+    font-size: 1rem;
+  }
+  .header__nav .nav__link {
+    font-size: 0.9rem;
+  }
+}
 
 .footer {
   display: flex;

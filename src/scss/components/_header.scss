@@ -9,4 +9,21 @@
     align-items: center;
     height: 100%;
   }
+
+  @media (max-width: 450px) {
+    &__logo {
+      text-align: center;
+      margin-right: 0.5rem;
+
+      .logo {
+        font-size: 1rem;
+      }
+    }
+
+    &__nav {
+      .nav__link {
+        font-size: 0.9rem;
+      }
+    }
+  }
 }
