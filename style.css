@@ -439,10 +439,17 @@ footer {
 }
 
 .home-screen section {
-  padding: 7rem 0;
+  padding: 6rem 0;
 }
 .home-screen__categories {
   background: #ddd;
+}
+.home-screen .home-screen__products-preview {
+  padding-bottom: 3rem;
+}
+
+.product-screen__additional-products {
+  padding-bottom: 3rem;
 }
 
 .products-screen__categories {
