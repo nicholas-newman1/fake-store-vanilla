@@ -6,6 +6,7 @@ import Header from './components/Header.js';
 import { parseRequestUrl } from './utils.js';
 import CartScreen from './screens/CartScreen.js';
 import ProductsScreen from './screens/ProductsScreen.js';
+import Footer from './components/Footer.js';
 
 const routes = {
   '/': HomeScreen,
@@ -26,6 +27,9 @@ const router = async () => {
 
   const header = document.getElementById('header');
   header.innerHTML = Header.render();
+
+  const footer = document.getElementById('footer');
+  footer.innerHTML = Footer.render();
 
   const main = document.getElementById('main');
   main.innerHTML = Loading.render();

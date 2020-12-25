@@ -14,12 +14,12 @@ body {
 }
 
 html {
-  background: #eee;  
+  background: #eee;
 }
 
 header,
 footer {
-  background: #123C5C
+  background: #123c5c;
 }
 
 .container {
@@ -35,7 +35,7 @@ footer {
     'main'
     'footer';
   grid-template-columns: 1fr;
-  grid-template-rows: 4rem 1fr 3rem;
+  grid-template-rows: 4rem 1fr 8rem;
   height: 100%;
 }
 
@@ -50,7 +50,7 @@ footer {
 }
 
 .btn:hover {
-  background: darken($color2, 10)
+  background: darken($color2, 10);
 }
 
 .btn--black {
@@ -58,6 +58,5 @@ footer {
 }
 
 .btn--black:hover {
-  background: darken(#222, 10)
+  background: darken(#222, 10);
 }
-

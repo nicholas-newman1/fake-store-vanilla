@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  &__logo {
+    margin-bottom: 1rem;
+  }
+
+  &__credits {
+    background: #ddd;
+  }
+
+  &__credits-text {
+    text-align: center;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0.25rem 0;
+  }
+}

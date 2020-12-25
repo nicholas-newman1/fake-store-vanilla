@@ -9,47 +9,4 @@
     align-items: center;
     height: 100%;
   }
-
-  &__logo {
-    color: white;
-    font-weight: 700;
-    font-size: 1.5rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: 300ms;
-    &:hover {
-      color: #ddd;
-    }
-  }
-
-  &__nav,
-  &__list,
-  &__item,
-  &__link {
-    height: 100%;
-  }
-
-  &__list {
-    list-style: none;
-    display: flex;
-    align-items: center;
-  }
-
-  &__item + &__item {
-    margin-left: 0.5rem;
-  }
-
-  &__link {
-    display: grid;
-    align-items: center;
-    color: white;
-    text-decoration: none;
-    padding: 0 0.5rem;
-    transition: 300ms;
-    &:hover {
-      background: rgba(0, 0, 0, 0.3);
-      color: #ddd;
-    }
-  }
 }

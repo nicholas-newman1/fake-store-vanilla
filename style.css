@@ -23,7 +23,7 @@ html {
 
 header,
 footer {
-  background: #123C5C;
+  background: #123c5c;
 }
 
 .container {
@@ -36,7 +36,7 @@ footer {
   display: grid;
   grid-template-areas: "header" "main" "footer";
   grid-template-columns: 1fr;
-  grid-template-rows: 4rem 1fr 3rem;
+  grid-template-rows: 4rem 1fr 8rem;
   height: 100%;
 }
 
@@ -71,7 +71,33 @@ footer {
   align-items: center;
   height: 100%;
 }
-.header__logo {
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+}
+.footer__logo {
+  margin-bottom: 1rem;
+}
+.footer__credits {
+  background: #ddd;
+}
+.footer__credits-text {
+  text-align: center;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0.25rem 0;
+}
+
+.logo {
   color: white;
   font-weight: 700;
   font-size: 1.5rem;
@@ -80,21 +106,25 @@ footer {
   letter-spacing: 1px;
   transition: 300ms;
 }
-.header__logo:hover {
+.logo:hover {
   color: #ddd;
 }
-.header__nav, .header__list, .header__item, .header__link {
+
+.nav {
   height: 100%;
 }
-.header__list {
+.nav__list, .nav__item, .nav__link {
+  height: 100%;
+}
+.nav__list {
   list-style: none;
   display: flex;
   align-items: center;
 }
-.header__item + .header__item {
+.nav__item + .nav__item {
   margin-left: 0.5rem;
 }
-.header__link {
+.nav__link {
   display: grid;
   align-items: center;
   color: white;
@@ -102,7 +132,7 @@ footer {
   padding: 0 0.5rem;
   transition: 300ms;
 }
-.header__link:hover {
+.nav__link:hover {
   background: rgba(0, 0, 0, 0.3);
   color: #ddd;
 }

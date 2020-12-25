@@ -1,0 +1,13 @@
+.logo {
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 300ms;
+
+  &:hover {
+    color: #ddd;
+  }
+}
