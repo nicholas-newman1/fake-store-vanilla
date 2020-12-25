@@ -2,19 +2,14 @@
 
 .products {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
   list-style: none;
-}
 
-@media (max-width: 1100px) {
-  .products {
+  @media (min-width: 700px) {
     grid-template-columns: repeat(2, 1fr);
   }
-}
 
-@media (max-width: 700px) {
-  .products {
-    grid-template-columns: repeat(1, 1fr);
+  @media (min-width: 1100px) {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

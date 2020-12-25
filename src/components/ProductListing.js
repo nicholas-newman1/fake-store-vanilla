@@ -2,7 +2,10 @@ const ProductListing = {
   render: (product) => {
     return `
       <li class="product-listing">
-        <a href="/#/product/${product.id}">
+        <a 
+          class="product-listing__img-container"
+          href="/#/product/${product.id}"
+        >
           <img class="product-listing__img" src=${product.image} />
         </a> 
         

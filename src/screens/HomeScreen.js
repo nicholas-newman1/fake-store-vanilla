@@ -11,7 +11,9 @@ const HomeScreen = {
     return `
       <div class='home-screen'>
         <section class='home-screen__hero'>
-          ${Hero.render()}
+          <div class='container'>
+            ${Hero.render()}
+          </div>
         </section>
 
         <section class='home-screen__categories'>
