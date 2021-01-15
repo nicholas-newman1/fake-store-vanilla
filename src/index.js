@@ -1,12 +1,12 @@
 import HomeScreen from './screens/HomeScreen/HomeScreen';
 import ProductScreen from './screens/ProductScreen/ProductScreen';
+import ProductsScreen from './screens/ProductsScreen/ProductsScreen';
 import Error404Screen from './screens/Error404Screen/Error404Screen';
+import CartScreen from './screens/CartScreen/CartScreen';
 import Loading from './components/Loading/Loading';
 import Header from './components/Header/Header';
-import { parseRequestUrl } from './js/utils';
-import CartScreen from './screens/CartScreen/CartScreen';
-import ProductsScreen from './screens/ProductsScreen/ProductsScreen';
 import Footer from './components/Footer/Footer';
+import { parseRequestUrl } from './js/utils';
 import 'core-js/stable';
 import 'whatwg-fetch';
 import './scss/index.scss';
