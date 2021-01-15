@@ -1,0 +1,29 @@
+@use '../../scss/config' as *;
+
+.hero {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &__title {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: $color1;
+    margin-bottom: 1rem;
+    position: relative;
+
+    &::after {
+      content: '';
+      height: 3px;
+      width: 50px;
+      background: $accent;
+      position: absolute;
+      bottom: -2px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

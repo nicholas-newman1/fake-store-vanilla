@@ -1,15 +1,15 @@
-import HomeScreen from './screens/HomeScreen.js';
-import ProductScreen from './screens/ProductScreen.js';
-import Error404Screen from './screens/Error404Screen.js';
-import Loading from './components/Loading.js';
-import Header from './components/Header.js';
-import { parseRequestUrl } from './utils.js';
-import CartScreen from './screens/CartScreen.js';
-import ProductsScreen from './screens/ProductsScreen.js';
-import Footer from './components/Footer.js';
+import HomeScreen from './screens/HomeScreen/HomeScreen.js';
+import ProductScreen from './screens/ProductScreen/ProductScreen.js';
+import Error404Screen from './screens/Error404Screen/Error404Screen.js';
+import Loading from './components/Loading/Loading.js';
+import Header from './components/Header/Header.js';
+import { parseRequestUrl } from './js/utils.js';
+import CartScreen from './screens/CartScreen/CartScreen.js';
+import ProductsScreen from './screens/ProductsScreen/ProductsScreen.js';
+import Footer from './components/Footer/Footer.js';
 import 'core-js/stable';
 import 'whatwg-fetch';
-import './style.scss';
+import './scss/index.scss';
 
 const routes = {
   '/': HomeScreen,
