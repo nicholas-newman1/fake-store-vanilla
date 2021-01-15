@@ -1,8 +1,8 @@
-import { getProduct } from '../../js/api.js';
-import { getCartItems, setCartItems } from '../../js/localStorage.js';
-import { parseRequestUrl, rerender } from '../../js/utils.js';
-import CartItem from '../../components/CartItem/CartItem.js';
-import CartCheckout from '../../components/CartCheckout/CartCheckout.js';
+import { getProduct } from '../../js/api';
+import { getCartItems, setCartItems } from '../../js/localStorage';
+import { parseRequestUrl, rerender } from '../../js/utils';
+import CartItem from '../../components/CartItem/CartItem';
+import CartCheckout from '../../components/CartCheckout/CartCheckout';
 import './cartScreen.scss';
 
 const addToCart = (item, forceUpdate = false) => {

@@ -1,6 +1,6 @@
-import Products from '../../components/Products/Products.js';
-import Categories from '../../components/Categories/Categories.js';
-import { parseRequestUrl, replaceUrlSpaces } from '../../js/utils.js';
+import Products from '../../components/Products/Products';
+import Categories from '../../components/Categories/Categories';
+import { parseRequestUrl, replaceUrlSpaces } from '../../js/utils';
 import './productsScreen.scss';
 
 const ProductsScreen = {

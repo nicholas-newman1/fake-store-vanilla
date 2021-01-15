@@ -1,4 +1,4 @@
-import Category from '../Category/Category.js';
+import Category from '../Category/Category';
 import './categories.scss';
 
 const Categories = {

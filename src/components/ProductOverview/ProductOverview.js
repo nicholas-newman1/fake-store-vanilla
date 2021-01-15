@@ -1,5 +1,5 @@
-import { getProduct } from '../../js/api.js';
-import { parseRequestUrl } from '../../js/utils.js';
+import { getProduct } from '../../js/api';
+import { parseRequestUrl } from '../../js/utils';
 import './productOverview.scss';
 
 const ProductOverview = {

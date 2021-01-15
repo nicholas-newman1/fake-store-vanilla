@@ -1,4 +1,4 @@
-import Products from '../Products/Products.js';
+import Products from '../Products/Products';
 import './productsPreview.scss';
 
 const ProductsPreview = {

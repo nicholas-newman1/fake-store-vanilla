@@ -1,5 +1,5 @@
-import ProductOverview from '../../components/ProductOverview/ProductOverview.js';
-import Products from '../../components/Products/Products.js';
+import ProductOverview from '../../components/ProductOverview/ProductOverview';
+import Products from '../../components/Products/Products';
 import './productScreen.scss';
 
 const ProductScreen = {

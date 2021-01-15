@@ -1,4 +1,4 @@
-import { getCartItems } from '../../js/localStorage.js';
+import { getCartItems } from '../../js/localStorage';
 import './cartCheckout.scss';
 
 const CartSubTotal = {

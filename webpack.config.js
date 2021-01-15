@@ -36,7 +36,7 @@ const common = {
 const development = {
   mode: 'development',
   output: {
-    filename: 'main.bundle.js',
+    filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {

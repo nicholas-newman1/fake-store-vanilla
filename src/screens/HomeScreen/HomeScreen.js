@@ -1,7 +1,7 @@
-import Categories from '../../components/Categories/Categories.js';
-import Hero from '../../components/Hero/Hero.js';
-import Products from '../../components/Products/Products.js';
-import ProductsPreview from '../../components/ProductsPreview/ProductsPreview.js';
+import Categories from '../../components/Categories/Categories';
+import Hero from '../../components/Hero/Hero';
+import Products from '../../components/Products/Products';
+import ProductsPreview from '../../components/ProductsPreview/ProductsPreview';
 import './homeScreen.scss';
 
 const HomeScreen = {
