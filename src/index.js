@@ -7,6 +7,9 @@ import { parseRequestUrl } from './utils.js';
 import CartScreen from './screens/CartScreen.js';
 import ProductsScreen from './screens/ProductsScreen.js';
 import Footer from './components/Footer.js';
+import 'core-js/stable';
+import 'whatwg-fetch';
+import './style.scss';
 
 const routes = {
   '/': HomeScreen,
