@@ -11,26 +11,6 @@ const common = {
       template: './src/index.html',
     }),
   ],
-  module: {
-    rules: [
-      {
-        test: /\.js?$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader',
-        options: {
-          presets: [
-            [
-              '@babel/preset-env',
-              {
-                useBuiltIns: 'usage',
-                corejs: 3,
-              },
-            ],
-          ],
-        },
-      },
-    ],
-  },
 };
 
 const development = {
@@ -56,7 +36,7 @@ const production = {
     path: path.resolve(__dirname, 'dist'),
   },
   plugins: [
-    new MiniCssExtractPlugin({ filename: '[name].[contenthash].css' }),
+    new MiniCssExtractPlugin({ filename: '[name].[contenthash].bundle.css' }),
     new CleanWebpackPlugin(),
   ],
   module: {

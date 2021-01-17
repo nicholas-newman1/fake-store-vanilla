@@ -7,8 +7,6 @@ import Loading from './components/Loading/Loading';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import { parseRequestUrl } from './js/utils';
-import 'core-js/stable';
-import 'whatwg-fetch';
 import './scss/index.scss';
 
 const routes = {
