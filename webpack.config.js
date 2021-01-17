@@ -16,7 +16,7 @@ const common = {
 const development = {
   mode: 'development',
   output: {
-    filename: 'main.js',
+    filename: 'index.js',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
@@ -32,7 +32,7 @@ const development = {
 const production = {
   mode: 'production',
   output: {
-    filename: 'main.[contenthash].bundle.js',
+    filename: 'index.[contenthash].bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
   plugins: [
