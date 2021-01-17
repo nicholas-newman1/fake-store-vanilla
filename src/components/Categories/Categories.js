@@ -10,19 +10,17 @@ const Categories = {
       { title: 'Electronics', path: 'electronics' },
     ];
 
-    return `
-      <div class='categories'>
+    return html`
+      <div class="categories">
         ${categories
           .map(
-            (category) => `
-            <div class="categories__item">
-              ${Category.render(category)}
-            </div>          
-        `
+            (category) => html`
+              <div class="categories__item">${Category.render(category)}</div>
+            `
           )
           .join('')}
       </div>
-  `;
+    `;
   },
 };
 

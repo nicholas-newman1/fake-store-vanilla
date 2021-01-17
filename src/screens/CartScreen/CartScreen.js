@@ -65,26 +65,23 @@ const CartScreen = {
         qty: 1,
       });
     }
-    return `
-      <div class='cart-screen container'>
-        <section class='cart-screen__cart'>
-        ${
-          getCartItems().length > 0
+    return html`
+      <div class="cart-screen container">
+        <section class="cart-screen__cart">
+          ${getCartItems().length > 0
             ? `<ul class='cart-screen__items'>
                 ${getCartItems()
                   .map((item) => CartItem.render(item))
                   .join('')}
               </ul>`
-            : `<h2 class='cart-screen__empty-msg'>Your Cart is Empty</h2>`
-        }
+            : `<h2 class='cart-screen__empty-msg'>Your Cart is Empty</h2>`}
         </section>
-        
-        <section class='cart-screen__checkout'>
+
+        <section class="cart-screen__checkout">
           ${CartCheckout.render()}
-        </section>        
+        </section>
       </div>
-      
-      `;
+    `;
   },
 };
 

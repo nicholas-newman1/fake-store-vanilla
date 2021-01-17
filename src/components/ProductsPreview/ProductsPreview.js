@@ -6,11 +6,13 @@ const ProductsPreview = {
     Products.after_render();
   },
   render: async (limit) => {
-    return `
-      <div class='products-preview'>
+    return html`
+      <div class="products-preview">
         ${await Products.render('', limit)}
-        <a class='products-preview__link' href='/#/products'>
-          <button class='products-preview__btn btn btn--black'>View All Products</button>
+        <a class="products-preview__link" href="/#/products">
+          <button class="products-preview__btn btn btn--black">
+            View All Products
+          </button>
         </a>
       </div>
     `;

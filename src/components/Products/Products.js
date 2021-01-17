@@ -19,8 +19,8 @@ const Products = {
     const res = await fetch(url);
     const products = await res.json();
 
-    return `
-      <ul class='products'>
+    return html`
+      <ul class="products">
         ${products
           .map((product, i) => {
             if (!limit) return ProductListing.render(product);
@@ -28,7 +28,6 @@ const Products = {
           })
           .join('')}
       </ul>
-      
     `;
   },
 };

@@ -9,24 +9,18 @@ const HomeScreen = {
     Products.after_render();
   },
   render: async () => {
-    return `
-      <div class='home-screen'>
-        <section class='home-screen__hero'>
-          <div class='container'>
-            ${Hero.render()}
-          </div>
+    return html`
+      <div class="home-screen">
+        <section class="home-screen__hero">
+          <div class="container">${Hero.render()}</div>
         </section>
 
-        <section class='home-screen__categories'>
-          <div class='container'>
-            ${Categories.render()}
-          </div>          
+        <section class="home-screen__categories">
+          <div class="container">${Categories.render()}</div>
         </section>
 
-        <section class='home-screen__products-preview'>
-          <div class='container'>
-            ${await ProductsPreview.render(6)}
-          </div>          
+        <section class="home-screen__products-preview">
+          <div class="container">${await ProductsPreview.render(6)}</div>
         </section>
       </div>
     `;

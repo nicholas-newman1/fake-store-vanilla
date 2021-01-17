@@ -2,14 +2,10 @@ import './cartItem.scss';
 
 const CartItem = {
   render: (item) => {
-    return `
+    return html`
       <li class="cart-item">
         <div class="cart-item__img-container">
-          <img
-            class="cart-item__img"
-            src=${item.image}
-            alt=${item.title}
-          />
+          <img class="cart-item__img" src=${item.image} alt=${item.title} />
         </div>
 
         <div class="cart-item__content">
@@ -25,7 +21,7 @@ const CartItem = {
           <div class="cart-item__options">
             <label class="cart-item__label">
               Qty:
-              <select class='cart-item__qty-select' data-id=${item.id}>
+              <select class="cart-item__qty-select" data-id=${item.id}>
                 ${[1, 2, 3, 4, 5]
                   .map((value) => {
                     return `
@@ -43,7 +39,7 @@ const CartItem = {
             <button class="cart-item__delete" data-id=${item.id}>Delete</button>
           </div>
         </div>
-      </li>    
+      </li>
     `;
   },
 };

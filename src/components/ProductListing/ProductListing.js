@@ -2,21 +2,20 @@ import './productListing.scss';
 
 const ProductListing = {
   render: (product) => {
-    return `
+    return html`
       <li class="product-listing">
-        <a 
+        <a
           class="product-listing__img-container"
           href="/#/product/${product.id}"
         >
           <img class="product-listing__img" src=${product.image} />
-        </a> 
-        
+        </a>
 
         <div class="product-listing__text">
           <h2 class="product-listing__title">
             <a class="product-listing__link" href="/#/product/${product.id}">
               ${product.title}
-            </a>                
+            </a>
           </h2>
           <h3 class="product-listing__price">$${product.price.toFixed(2)}</h3>
         </div>
@@ -25,7 +24,7 @@ const ProductListing = {
           Add To Cart
         </button>
       </li>
-  `;
+    `;
   },
 };
 
