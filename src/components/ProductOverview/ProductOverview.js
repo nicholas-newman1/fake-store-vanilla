@@ -20,7 +20,7 @@ const ProductOverview = {
 
     ProductOverview.category = product.category;
 
-    return html` <div class="product-overview">
+    return /*html*/ ` <div class="product-overview">
       <img
         class="product-overview__img"
         src="${product.image}"

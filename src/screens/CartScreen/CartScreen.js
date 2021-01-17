@@ -65,16 +65,18 @@ const CartScreen = {
         qty: 1,
       });
     }
-    return html`
+    return /*html*/ `
       <div class="cart-screen container">
         <section class="cart-screen__cart">
-          ${getCartItems().length > 0
-            ? `<ul class='cart-screen__items'>
+          ${
+            getCartItems().length > 0
+              ? /*html*/ `<ul class='cart-screen__items'>
                 ${getCartItems()
                   .map((item) => CartItem.render(item))
                   .join('')}
               </ul>`
-            : `<h2 class='cart-screen__empty-msg'>Your Cart is Empty</h2>`}
+              : /*html*/ `<h2 class='cart-screen__empty-msg'>Your Cart is Empty</h2>`
+          }
         </section>
 
         <section class="cart-screen__checkout">

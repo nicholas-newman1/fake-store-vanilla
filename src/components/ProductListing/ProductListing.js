@@ -2,7 +2,7 @@ import './productListing.scss';
 
 const ProductListing = {
   render: (product) => {
-    return html`
+    return /*html*/ `
       <li class="product-listing">
         <a
           class="product-listing__img-container"

@@ -19,7 +19,7 @@ const Products = {
     const res = await fetch(url);
     const products = await res.json();
 
-    return html`
+    return /*html*/ `
       <ul class="products">
         ${products
           .map((product, i) => {

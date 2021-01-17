@@ -8,7 +8,7 @@ const CartSubTotal = {
       .reduce((a, c) => (a += c.price * c.qty), 0)
       .toFixed(2);
 
-    return html`
+    return /*html*/ `
       <div class="cart-checkout">
         <div class="cart-checkout__sub-total">
           <h2 class="cart-checkout__sub-total-label">Subtotal:</h2>

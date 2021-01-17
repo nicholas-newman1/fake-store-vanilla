@@ -1,7 +1,7 @@
 import './nav.scss';
 
 const Nav = {
-  render: () => html` <nav class="nav">
+  render: () => /*html*/ ` <nav class="nav">
     <ul class="nav__list">
       <li class="nav__item">
         <a href="/#" class="nav__link">Home</a>

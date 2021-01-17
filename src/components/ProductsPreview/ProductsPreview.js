@@ -6,7 +6,7 @@ const ProductsPreview = {
     Products.after_render();
   },
   render: async (limit) => {
-    return html`
+    return /*html*/ `
       <div class="products-preview">
         ${await Products.render('', limit)}
         <a class="products-preview__link" href="/#/products">

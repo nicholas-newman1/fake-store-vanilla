@@ -2,7 +2,7 @@ import './hero.scss';
 
 const Hero = {
   render: () => {
-    return html`
+    return /*html*/ `
       <div class="hero">
         <h1 class="hero__title">The Best Fake Products</h1>
         <a href="/#/products">

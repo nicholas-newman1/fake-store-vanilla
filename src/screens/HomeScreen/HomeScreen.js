@@ -9,7 +9,7 @@ const HomeScreen = {
     Products.after_render();
   },
   render: async () => {
-    return html`
+    return /*html*/ `
       <div class="home-screen">
         <section class="home-screen__hero">
           <div class="container">${Hero.render()}</div>

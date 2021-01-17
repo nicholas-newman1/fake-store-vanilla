@@ -7,7 +7,7 @@ const ProductScreen = {
     ProductOverview.after_render();
     Products.after_render();
   },
-  render: async () => html`
+  render: async () => /*html*/ `
     <div class="product-screen container">
       <section class="product-screen__product-overview">
         ${await ProductOverview.render()}

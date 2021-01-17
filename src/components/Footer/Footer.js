@@ -3,7 +3,7 @@ import Nav from '../Nav/Nav';
 import './footer.scss';
 
 const Footer = {
-  render: () => html` 
+  render: () => /*html*/ ` 
     <div class="footer__container container">
       <div class="footer__logo">${Logo.render()}</div>
       <div class="footer__nav">${Nav.render()}</div>

@@ -2,7 +2,7 @@ import './cartItem.scss';
 
 const CartItem = {
   render: (item) => {
-    return html`
+    return /*html*/ `
       <li class="cart-item">
         <div class="cart-item__img-container">
           <img class="cart-item__img" src=${item.image} alt=${item.title} />

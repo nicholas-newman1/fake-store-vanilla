@@ -12,7 +12,7 @@ const ProductsScreen = {
     let category = '';
     const request = parseRequestUrl();
     if (request.id) category = request.id;
-    return html`
+    return /*html*/ `
       <div class="products-screen">
         <section class="products-screen__categories">
           <div class="container">${Categories.render()}</div>
